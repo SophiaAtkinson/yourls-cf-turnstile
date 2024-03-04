@@ -3,7 +3,7 @@
 Plugin Name: Cloudflare Turnstile for YOURLS Admin
 Plugin URI: https://github.com/sophiaatkinson/yourls-cloudflare-turnstile
 Description: Adds Cloudflare Turnstile to the YOURLS Admin login.
-Version: 1.0
+Version: 1.0a
 Author: Sophia Atkinson
 Author URI: https://sophia.wtf
 */
@@ -42,7 +42,7 @@ function cf_turnstile_inject_script() {
                     document.getElementById(\'cfTokenInput\').value = token;
                     // Send the token to the verification script
                     var xhr = new XMLHttpRequest();
-                    xhr.open("POST", "' . yourls_plugin_url('cf_turnstile_verify.php') . '", true);
+                    xhr.open("POST", "' . yourls_plugin_url(__DIR__ . '/cf_turnstile_verify.php') . '", true);
                     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                     xhr.onreadystatechange = function() {
                         if (xhr.readyState === XMLHttpRequest.DONE) {
