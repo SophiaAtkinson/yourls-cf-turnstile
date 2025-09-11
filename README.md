@@ -1,5 +1,8 @@
-Cloudflare Turnstile for YOURLS Admin
-====================
+# Cloudflare Turnstile for YOURLS Admin (EOL)
+
+**⚠️ End of Life:** This plugin is no longer maintained. For a maintained and working version, please see [russdunn/yourls-cf-turnstile-v2](https://github.com/russdunn/yourls-cf-turnstile-v2).
+
+---
 
 Plugin for [YOURLS](https://yourls.org) `v1.19.2`. 
 
